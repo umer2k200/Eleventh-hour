@@ -81,11 +81,13 @@
 .banner-one_text{
 	position: relative;
 	font-size: 30px;
+	font-weight: 600;
 	line-height: 40px;
-	padding-top:20px;
+	padding-top:15px;
+	padding-bottom: 20px;
 	padding-right:180px;
 	color: var(--white-color);
-	border-top:1px solid #540045;
+	border-bottom:1px solid var(--white-color);
 }
 
 .banner-one_text-two{

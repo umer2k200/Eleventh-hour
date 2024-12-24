@@ -37,11 +37,11 @@
 	
 	/* #ba024a in decimal RGB */
 	/* change this color */
-	--main-color: rgb(186,2,74); 
+	--main-color: #cb8cbd; 
 	--main-color-rgb:186,2,74;
 	
 	/* #540045 in decimal RGB */
-	--color-two: rgb(84,0,69);
+	--color-two: #aa278e;
 	--color-two-rgb:84,0,69;
 	
 	/* #120c12 in decimal RGB */
