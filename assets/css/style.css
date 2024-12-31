@@ -81,13 +81,15 @@
 .banner-one_text{
 	position: relative;
 	font-size: 30px;
-	font-weight: 600;
+	/* font-weight: 600; */
 	line-height: 40px;
 	padding-top:15px;
 	padding-bottom: 20px;
-	padding-right:180px;
+	padding-right:50px;
+	/* padding-right:180px; */
 	color: var(--white-color);
 	border-bottom:1px solid var(--white-color);
+	/* width: 35%; */
 }
 
 .banner-one_text-two{
@@ -95,7 +97,9 @@
 	font-size: 30px;
 	line-height: 40px;
 	padding-bottom:20px;
-	padding-right:180px;
+	padding-right:10px;
+	/* padding-right:180px; */
+	padding-left: 50px;
 	color: var(--white-color);
 	border-bottom:1px solid var(--white-color);
 }
