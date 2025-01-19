@@ -110,7 +110,7 @@
 }
 
 body {
-	font-family: 'Clash Display';
+	font-family: 'FormulaCondensed';
 	line-height:1.6em;
 	font-weight:400;
 	font-size:14px;
@@ -171,7 +171,7 @@ body {
 .handle-preloader .animation-preloader .txt-loading {
   text-align: center;
   user-select: none;
-  font-family: 'Clash Display';
+  font-family: 'FormulaCondensed';
 }
 
 .handle-preloader .animation-preloader .txt-loading .letters-loading:before{
@@ -182,7 +182,7 @@ body {
   opacity: 0;
   top:0;
   position: absolute;
-  font-family: 'Clash Display';
+  font-family: 'FormulaCondensed';
 }
 
 .handle-preloader .animation-preloader .txt-loading .letters-loading{
@@ -192,7 +192,7 @@ body {
   position: relative;
   font-size: 70px;
   line-height: 70px;
-  font-family: 'Clash Display';
+  font-family: 'FormulaCondensed';
   /* color: transparent;
   -webkit-text-stroke-width: 1px;
   
@@ -312,7 +312,7 @@ h1,h2,h3,h4,h5,h6 {
 	margin:0px;
 	background:none;
 	color:var(--color-four);
-	font-family: 'Clash Display';
+	font-family: 'FormulaCondensed';
 }
 
 input,button,select,textarea{
@@ -409,6 +409,14 @@ img{
 ::-moz-input-placeholder{color: inherit;}
 ::-ms-input-placeholder{color: inherit;}
 
+@font-face {
+	font-family: 'FormulaCondensed';
+	src: url('FormulaCondensed-Light.eot');
+	src: url('../fonts/FormulaCondensed-Light.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
 
 @font-face {
     font-family: 'Clash Display';
