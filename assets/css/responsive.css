@@ -28,11 +28,21 @@
 		line-height:30px;
 		padding-right:50px;
 	}
-	
+	.banner-one_heading{
+		font-size: 68px;
+	}
 	.banner-one_text{
 		font-size:20px;
 		line-height:30px;
 		padding-right:50px;
+	}
+	.robot{
+		position: absolute !important;
+		bottom: 0;
+		margin-bottom: 80px;
+		width: 100%;
+		z-index: 3;
+		mix-blend-mode: exclusion;
 	}
 	
 	.journel-one .journel-block_one {
@@ -338,6 +348,46 @@
 		font-size:16px;
 		line-height:26px;
 	}
+	.banner-one_content{
+		text-align: center;
+		padding: 0 15px;
+	}
+	.banner-one_heading{
+		font-size: 50px;
+	}
+	.banner-one_text .banner-one_text-two{
+		font-size: 14px;
+		line-height: 24px;
+	}
+	.robot{
+		margin-bottom: 140px;
+	}
+	.mobile-nav-toggler {
+        display: block;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        z-index: 1000;
+    }
+    .mobile-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: #fff;
+        z-index: 999;
+        display: none; /* Initially hidden */
+    }
+    .mobile-menu.open {
+        display: block; /* Shown when toggled */
+    }
+	.banner-one video {
+        display: none; /* Optional: Hide the video */
+    }
+    .banner-one {
+        background: url('assets/images/static-bg.jpg') no-repeat center center/cover;
+    }
 	
 }
 

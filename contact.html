@@ -200,38 +200,78 @@
 <script src="assets/js/ScrollTrigger.min.js"></script>
 <script src="assets/js/ScrollToPlugin.min.js"></script>
 <script src="assets/js/ScrollSmoother.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
 <script src="assets/js/script.js"></script>
-<script>
-    document.getElementById('contact-form').addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent the default form submission
+<!-- Add Firebase SDKs -->
+<script type="module">
 
-        // Get form data
+	import { initializeApp } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-app.js";
+	import { getFirestore,doc,setDoc } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-firestore.js";
+
+	const firebaseConfig = {
+		apiKey: "AIzaSyCJH6zpC_LIPiSjdTk4c9LRKYJPJsuKgMQ",
+		authDomain: "eleventhour-cba91.firebaseapp.com",
+		projectId: "eleventhour-cba91",
+		storageBucket: "eleventhour-cba91.firebasestorage.app",
+		messagingSenderId: "71140986332",
+		appId: "1:71140986332:web:d763eea15528e5767d1319",
+		measurementId: "G-RWRL9JEY7F"
+	};
+  
+	const app = initializeApp(firebaseConfig);
+	console.log("Firebase App Initialized:", app);
+    const db = getFirestore(app);
+
+	document.getElementById('contact-form').addEventListener('submit', async function(event) {
+        event.preventDefault(); // Prevent default form submission
         const formData = new FormData(this);
-		const jsonData = Object.fromEntries(formData.entries()); 
+        const jsonData = Object.fromEntries(formData.entries());
 
-        // Send the form data via AJAX
-        fetch("https://formspree.io/f/xwppavgj", {
-            method: 'POST',
-            body: formData
-        })
-        .then(response => {
-            if (response.ok) {
-                // Show a success message
-                alert('Thank you for contacting us. We will get back to you soon!');
-                // Optionally, reset the form
-                document.getElementById('contact-form').reset();
-            } else {
-                // Handle error
-                alert('There was an issue submitting your form. Please try again.');
+        try {
+			const docRef = doc(db, 'user', jsonData.username);
+			await setDoc(docRef, jsonData);
+
+            //const docRef = await db.collection('user').add(jsonData);
+            console.log("Document written with ID: ", docRef.id);
+            //alert("User details stored successfully");
+			// Sending email to the us 
+			fetch("https://formspree.io/f/xwppavgj", {
+				method: 'POST',
+				headers: {
+					'Accept': 'application/json'
+				},
+				body: formData
+			})
+			.then(response => {
+				if (response.ok) {
+					// Show a success message
+					console.log('Email sent successfully:', response);
+					alert('Thank you for contacting us. We will get back to you soon!');
+					// Optionally, reset the form
+					document.getElementById('contact-form').reset();
+				} else {
+					// Handle error
+					console.error('Email sending failed with status:', response.status, response.statusText);
+					alert('There was an issue submitting your form. Please try again.');
+					document.getElementById('contact-form').reset();
+				}
+			})
+			.catch(error => {
+				// Handle error
+				console.error('Error during email submission:', error);
+				alert('There was an issue submitting your form. Please try again.');
 				document.getElementById('contact-form').reset();
-			}
-        })
-        .catch(error => {
-            // Handle network or other errors
-            alert('Thank you for contacting us. We will get back to you soon!');
-			document.getElementById('contact-form').reset();
-		});
-    });
+			});
+
+            this.reset();
+        } catch (error) {
+            console.error("Error storing user details:", error);
+            alert("Error in storing user details"+ error);
+        }
+    
+	});
+
 </script>
 
 <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
