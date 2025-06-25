@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Montek Creative Agency Business HTML-5 Template | journal</title>
+<title>Eleventhour Official | Services</title>
 <!-- Stylesheets -->
 <link href="assets/css/bootstrap.css" rel="stylesheet">
 <link href="assets/css/style.css" rel="stylesheet">
@@ -11,19 +11,25 @@
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-<link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
-<link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+<link rel="shortcut icon" href="assets/images/tab-logo2.svg" type="image/x-icon">
+<link rel="icon" href="assets/images/tab-logo2.svg" type="image/x-icon">
 
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
+
 </head>
 
 <body>
 
-<div class="page-wrapper image-layer" style="background-image:url(assets/images/background/4.jpg)">
+<div class="page-wrapper image-layer" style="position: relative; overflow: hidden; min-height: 100vh;">
  	
+	<video autoplay muted loop playsinline preload="auto"
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
+        <source src="assets/images/background/33.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
 
 	
 	<!-- Main Header -->
@@ -36,7 +42,7 @@
 					<div class="d-flex justify-content-between align-items-center flex-wrap">
 						
 						<div class="logo-box">
-							<div class="logo"><a href="index.html"><img src="assets/images/logo.png" alt="" title=""></a></div>
+							<div class="logo"><a href="index.html"><img src="assets/images/favicon5.svg" alt="" title=""></a></div>
 						</div>
 						
 						<div class="nav-outer d-flex flex-wrap">
@@ -54,20 +60,10 @@
 								<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
 									<ul class="navigation clearfix">
 										<li><a href="index.html">Home</a></li>
-										<li><a href="about.html">About</a></li>
-										<li class="dropdown"><a href="#">journal</a>
-											<ul>
-												<li><a href="journal.html">journal</a></li>
-												<li><a href="journal-detail.html">journal detail</a></li>
-											</ul>
-										</li>
-										<li class="dropdown"><a href="#">work</a>
-											<ul>
-												<li><a href="work.html">work</a></li>
-												<li><a href="single-work.html">work detail</a></li>
-											</ul>
-										</li>
-										<li><a href="contact.html">Contact</a></li>
+											<li><a href="about.html">About</a></li>
+											<li><a href="journal.html">Services</a></li>
+											<li><a href="work.html">Events</a></li>
+											<li><a href="contact.html">Contact</a></li>
 									</ul>
 								</div>
 							</nav>
@@ -102,202 +98,227 @@
 	<!-- Page Title -->
 	<section class="page-title">
 		<div class="auto-container">
-			<h1 class="page-title_heading">journal</h1>
-			<div class="page-title_text">Tech Tales, Shared Perspectives</div>
+			<h1 class="page-title_heading">Services</h1>
+			<div class="page-title_text">Expert services, crafted for you.</div>
 		</div>
 	</section>
 	<!-- End Page Title -->
 
-	<!-- journal Two -->
-	<section class="journal-two">
-		<div class="auto-container">
-			<div class="row clearfix">
-				
-				<!-- journal Block One -->
-				<div class="journal-block_one">
-					<div class="journal-block_one-inner">
-						<div class="journal-block_one-title">Design</div>
-						<h5 class="journal-block_one-heading"><a href="journal-detail.html">Efficient Web Design in Webflow</a></h5>
-						<a href="journal-detail.html" class="journal-block_one-arrow fa-solid fa-arrow-right fa-fw"></a>
+	<section class="services-section container">
+        <div class="row g-4">
+            <!-- Service 1 -->
+            <div class="col-lg-4 col-md-6">
+                 <div class="service-card">
+                    <img src="assets/images/services/lights.jpg" alt="Events Lighting" class="service-image">
+                    <div class="service-content text-center">
+						<div class="service-title">Event Lighting</div>
+						<p class="service-description">
+							Create the perfect mood for your event with professional lighting designs, including ambient, decorative, and spotlighting solutions tailored to your theme and venue.
+						</p>
 					</div>
-				</div>
-				
-				<!-- journal Block One -->
-				<div class="journal-block_one">
-					<div class="journal-block_one-inner">
-						<div class="journal-block_one-title">tech</div>
-						<h5 class="journal-block_one-heading"><a href="journal-detail.html">Responsive Design Tips: Webflow Edition</a></h5>
-						<a href="journal-detail.html" class="journal-block_one-arrow fa-solid fa-arrow-right fa-fw"></a>
+                </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card">
+                    <img src="assets/images/services/staging.jpg" alt="Events Lighting" class="service-image">
+                    <div class="service-content text-center">
+						<div class="service-title">Staging</div>
+						<p class="service-description">
+							Expertly crafted and secure staging solutions, customized to fit your event requirements, ensuring a visually appealing and functional platform for performances, speeches, or presentations.
+						</p>
 					</div>
-				</div>
-				
-				<!-- journal Block One -->
-				<div class="journal-block_one">
-					<div class="journal-block_one-inner">
-						<div class="journal-block_one-title">tutorials</div>
-						<h5 class="journal-block_one-heading"><a href="journal-detail.html">Creating Dynamic Websites with Webflow</a></h5>
-						<a href="journal-detail.html" class="journal-block_one-arrow fa-solid fa-arrow-right fa-fw"></a>
+                </div>
+            </div>
+
+            <!-- Service 3 -->
+			<div class="col-lg-4 col-md-6">
+                <div class="service-card">
+                    <img src="assets/images/services/sound.jpg" alt="Events Lighting" class="service-image">
+                    <div class="service-content text-center">
+						<div class="service-title">Sound Equipment</div>
+						<p class="service-description">
+							Deliver exceptional audio clarity with our state-of-the-art sound systems, designed for events of any size, from intimate gatherings to large-scale productions.
+						</p>
 					</div>
-				</div>
-				
-				<!-- journal Block One -->
-				<div class="journal-block_one">
-					<div class="journal-block_one-inner">
-						<div class="journal-block_one-title">coding</div>
-						<h5 class="journal-block_one-heading"><a href="journal-detail.html">Inspiring Webflow Designs: Sparking Creativity</a></h5>
-						<a href="journal-detail.html" class="journal-block_one-arrow fa-solid fa-arrow-right fa-fw"></a>
+                </div>
+            </div>
+
+			<!-- Service 4 -->
+			<div class="col-lg-4 col-md-6">
+                <div class="service-card">
+                    <img src="assets/images/services/led-screen-2.jpg" alt="Events Lighting" class="service-image">
+                    <div class="service-content text-center">
+						<div class="service-title">LED Screens</div>
+						<p class="service-description">
+							High-resolution LED screens to showcase visuals, presentations, or live streams, adding a dynamic and engaging element to your event.
+						</p>
 					</div>
-				</div>
-				
-				<!-- journal Block One -->
-				<div class="journal-block_one">
-					<div class="journal-block_one-inner">
-						<div class="journal-block_one-title">updates</div>
-						<h5 class="journal-block_one-heading"><a href="journal-detail.html">Exploring Webflow CMS: Unveiling Functionality</a></h5>
-						<a href="journal-detail.html" class="journal-block_one-arrow fa-solid fa-arrow-right fa-fw"></a>
+                </div>
+            </div>
+
+			<!-- Service 5-->
+			<div class="col-lg-4 col-md-6">
+                <div class="service-card">
+                    <img src="assets/images/services/conference.jpg" alt="Events Lighting" class="service-image">
+                    <div class="service-content text-center">
+						<div class="service-title">Conference Equipment</div>
+						<p class="service-description">
+							Comprehensive setups for conferences, including microphones, PA systems, podiums, and display technology, to ensure seamless communication and a professional atmosphere.
+						</p>
 					</div>
-				</div>
-				
-				<!-- journal Block One -->
-				<div class="journal-block_one">
-					<div class="journal-block_one-inner">
-						<div class="journal-block_one-title">Design</div>
-						<h5 class="journal-block_one-heading"><a href="journal-detail.html">Webflow Design Hacks: Quick Tips for Stunning Websites</a></h5>
-						<a href="journal-detail.html" class="journal-block_one-arrow fa-solid fa-arrow-right fa-fw"></a>
+                </div>
+            </div>
+            
+			<!-- Service 6-->
+			<div class="col-lg-4 col-md-6">
+                <div class="service-card">
+                    <img src="assets/images/services/projector.jpg" alt="Events Lighting" class="service-image">
+                    <div class="service-content text-center">
+						<div class="service-title">Projectors & Screens</div>
+						<p class="service-description">
+							Advanced projection systems and high-quality screens for delivering impactful presentations, videos, or visual storytelling at your event.
+						</p>
 					</div>
-				</div>
-				
-				<!-- journal Block One -->
-				<div class="journal-block_one">
-					<div class="journal-block_one-inner">
-						<div class="journal-block_one-title">tech</div>
-						<h5 class="journal-block_one-heading"><a href="journal-detail.html">Mobile Optimization in Webflow: Designing for Every Device</a></h5>
-						<a href="journal-detail.html" class="journal-block_one-arrow fa-solid fa-arrow-right fa-fw"></a>
+                </div>
+            </div>
+
+			<!-- Service 7-->
+			<div class="col-lg-4 col-md-6">
+                <div class="service-card">
+                    <img src="assets/images/services/furniture.jpg" alt="Events Lighting" class="service-image">
+                    <div class="service-content text-center">
+						<div class="service-title">Event Furniture</div>
+						<p class="service-description">
+							A wide selection of stylish and functional furniture options, from seating and tables to lounges, perfectly matched to your event's theme and guest performance.
+						</p>
 					</div>
-				</div>
-				
-				<!-- journal Block One -->
-				<div class="journal-block_one">
-					<div class="journal-block_one-inner">
-						<div class="journal-block_one-title">tutorials</div>
-						<h5 class="journal-block_one-heading"><a href="journal-detail.html">Webflow for Beginners: Getting Started with Ease</a></h5>
-						<a href="journal-detail.html" class="journal-block_one-arrow fa-solid fa-arrow-right fa-fw"></a>
+                </div>
+            </div>
+
+			<!-- Service 8-->
+			<div class="col-lg-4 col-md-6">
+                <div class="service-card">
+                    <img src="assets/images/services/backdrop.jpg" alt="Events Lighting" class="service-image">
+                    <div class="service-content text-center">
+						<div class="service-title">Backdrops & Draping</div>
+						<p class="service-description">
+							Elegant and customizable backdrops and draping to enhance the visual appeal of your venue and create stunning photo oppurtunities.
+						</p>
 					</div>
-				</div>
-				
-				<!-- journal Block One -->
-				<div class="journal-block_one">
-					<div class="journal-block_one-inner">
-						<div class="journal-block_one-title">coding</div>
-						<h5 class="journal-block_one-heading"><a href="journal-detail.html">Webflow Interactions: Adding Life to Your Website</a></h5>
-						<a href="journal-detail.html" class="journal-block_one-arrow fa-solid fa-arrow-right fa-fw"></a>
+                </div>
+            </div>
+
+			<!-- Service 9-->
+			<div class="col-lg-4 col-md-6">
+                <div class="service-card">
+                    <img src="assets/images/services/installations-3.jpg" alt="Events Lighting" class="service-image">
+                    <div class="service-content text-center">
+						<div class="service-title">Event Installations</div>
+						<p class="service-description">
+							Unique, creative installations designed to reflect your event's vision and make a lasting impression on your guests.
+						</p>
 					</div>
-				</div>
-				
-				<!-- journal Block One -->
-				<div class="journal-block_one">
-					<div class="journal-block_one-inner">
-						<div class="journal-block_one-title">updates</div>
-						<h5 class="journal-block_one-heading"><a href="journal-detail.html">Webflow Hosting Guide: Choosing the Right Plan</a></h5>
-						<a href="journal-detail.html" class="journal-block_one-arrow fa-solid fa-arrow-right fa-fw"></a>
+                </div>
+            </div>
+
+			<!-- Service 10-->
+			<div class="col-lg-4 col-md-6">
+                <div class="service-card">
+                    <img src="assets/images/services/effects.jpg" alt="Events Lighting" class="service-image">
+                    <div class="service-content text-center">
+						<div class="service-title">Special Effects</div>
+						<p class="service-description">
+							Add a wow factor to your event with special effects like fog machines, confetti cannons, pyrotechnics, and lighting displays that captivate your audience.
+						</p>
 					</div>
-				</div>
-				
-				<!-- journal Block One -->
-				<div class="journal-block_one">
-					<div class="journal-block_one-inner">
-						<div class="journal-block_one-title">Design</div>
-						<h5 class="journal-block_one-heading"><a href="journal-detail.html">Webflow Assets: Using Images and Videos Like a Pro</a></h5>
-						<a href="journal-detail.html" class="journal-block_one-arrow fa-solid fa-arrow-right fa-fw"></a>
+                </div>
+            </div>
+
+			<!-- Service 11-->
+			<div class="col-lg-4 col-md-6">
+                <div class="service-card">
+                    <img src="assets/images/services/marquee.jpg" alt="Events Lighting" class="service-image">
+                    <div class="service-content text-center">
+						<div class="service-title">Marquess & Structures</div>
+						<p class="service-description">
+							Durable weatherproof marquees and structures available in various sizes and desgins, perfect for creating a versatile and stylish event space.
+						</p>
 					</div>
-				</div>
-				
-				<!-- journal Block One -->
-				<div class="journal-block_one">
-					<div class="journal-block_one-inner">
-						<div class="journal-block_one-title">tech</div>
-						<h5 class="journal-block_one-heading"><a href="journal-detail.html">Webflow Pricing Plans: Finding the Best Fit for You</a></h5>
-						<a href="journal-detail.html" class="journal-block_one-arrow fa-solid fa-arrow-right fa-fw"></a>
+                </div>
+            </div>
+
+			<!-- Service 12-->
+			<div class="col-lg-4 col-md-6">
+                <div class="service-card">
+                    <img src="assets/images/services/dance.jpg" alt="Events Lighting" class="service-image">
+                    <div class="service-content text-center">
+						<div class="service-title">Dance Floors</div>
+						<p class="service-description">
+							Customizable dance floors in various designs and finishes to suit your event's theme, ensuring a lively and engaging atmosphere for your guests.
+						</p>
 					</div>
-				</div>
-				
-				<!-- journal Block One -->
-				<div class="journal-block_one">
-					<div class="journal-block_one-inner">
-						<div class="journal-block_one-title">tutorials</div>
-						<h5 class="journal-block_one-heading"><a href="journal-detail.html">SEO Essentials: Optimizing Your Site for Search Engines</a></h5>
-						<a href="journal-detail.html" class="journal-block_one-arrow fa-solid fa-arrow-right fa-fw"></a>
-					</div>
-				</div>
-				
-				<!-- journal Block One -->
-				<div class="journal-block_one">
-					<div class="journal-block_one-inner">
-						<div class="journal-block_one-title">coding</div>
-						<h5 class="journal-block_one-heading"><a href="journal-detail.html">Connecting with Fellow Designers: Building Community in the Field</a></h5>
-						<a href="journal-detail.html" class="journal-block_one-arrow fa-solid fa-arrow-right fa-fw"></a>
-					</div>
-				</div>
-				
-				<!-- journal Block One -->
-				<div class="journal-block_one">
-					<div class="journal-block_one-inner">
-						<div class="journal-block_one-title">updates</div>
-						<h5 class="journal-block_one-heading"><a href="journal-detail.html">Smooth Project Communication: Collaborating with Clients</a></h5>
-						<a href="journal-detail.html" class="journal-block_one-arrow fa-solid fa-arrow-right fa-fw"></a>
-					</div>
-				</div>
-				
-			</div>
-		</div>
-	</section>
-	<!-- End journal Two -->
-	
+                </div>
+            </div>
+        </div>
+    </section>
+
 	<!-- Main Footer -->
 	<footer class="main-footer">
 		<div class="auto-container">
 			<!-- Widgets Section -->
 			<div class="widgets-section">
 				<div class="row clearfix">
-					
+
 					<!-- Footer Column -->
 					<div class="footer-column col-lg-8 col-md-12 col-sm-12">
-						<div class="footer-text">Let's grab some coffee. <br> We're nestled in the heart of a bustling metropolis <br> but occasionally venture to the tranquil countryside</div>
-						<h2>Interested in working with us? <a href="mailto:hello@Montek-template.io">hello@Montek-template.io</a></h2>
+						<div class="footer-text">Let's grab some coffee. <br> We're nestled in the heart of a
+							bustling metropolis <br> but occasionally venture to the tranquil countryside</div>
+						<h2>Interested in working with us? <a
+								href="mailto:hello@eleventhourofficial.com">hello@eleventhourofficial.com</a></h2>
 						<ul class="footer_socials">
-							<li><a href="https://www.dribbble.com">Dribbble <i class="fa-solid fa-arrow-right fa-fw"></i></a></li>
-							<li><a href="https://www.behance.net">Behance <i class="fa-solid fa-arrow-right fa-fw"></i></a></li>
-							<li><a href="https://www.facebook.com">Facebook <i class="fa-solid fa-arrow-right fa-fw"></i></a></li>
-							<li><a href="https://www.instagram.com">Instagram <i class="fa-solid fa-arrow-right fa-fw"></i></a></li>
+							<li><a href="https://www.linkedin.com/company/eleventhourofficial/posts/?feedView=all">Linkedin
+									<i class="fa-solid fa-arrow-right fa-fw"></i></a></li>
+							<li><a href="https://www.facebook.com/eleventhourofficial/">Facebook <i
+										class="fa-solid fa-arrow-right fa-fw"></i></a></li>
+							<li><a href="https://www.instagram.com/eleventhourofficial/">Instagram <i
+										class="fa-solid fa-arrow-right fa-fw"></i></a></li>
 						</ul>
 					</div>
-					
+
 					<!-- Footer Column -->
 					<div class="footer-column col-lg-4 col-md-12 col-sm-12">
 						<ul class="footer_navs">
 							<li><a href="index.html">Home <i class="fa-solid fa-arrow-right fa-fw"></i></a></li>
 							<li><a href="about.html">About <i class="fa-solid fa-arrow-right fa-fw"></i></a></li>
-							<li><a href="work.html">work <i class="fa-solid fa-arrow-right fa-fw"></i></a></li>
-							<li><a href="journal.html">journal <i class="fa-solid fa-arrow-right fa-fw"></i></a></li>
-							<li><a href="contact.html">Contact <i class="fa-solid fa-arrow-right fa-fw"></i></a></li>
+							<li><a href="journal.html">Services <i class="fa-solid fa-arrow-right fa-fw"></i></a></li>
+							<li><a href="work.html">Events <i class="fa-solid fa-arrow-right fa-fw"></i></a>
+							</li>
+							<li><a href="contact.html">Contact <i class="fa-solid fa-arrow-right fa-fw"></i></a>
+							</li>
 						</ul>
 					</div>
-					
+
 				</div>
 			</div>
 		</div>
 		<div class="footer-bottom">
 			<div class="auto-container">
 				<div class="d-flex justify-content-between align-items-center flex-wrap">
-					<div class="footer_copyright">&copy; 2024 Montek  -  Made by ThemeGuri</div>
-			<a class="backtop down-box scroll-to-target" data-target=".page-wrapper">
-<i class="fa-solid fa-arrow-up"></i>
-			</a>
+					<div class="footer_copyright">&copy; 2025 Eleventhour Official - All rights reserved</div>
+					<a class="backtop down-box scroll-to-target" data-target=".page-wrapper">
+						<i class="fa-solid fa-arrow-up"></i>
+					</a>
 				</div>
 			</div>
 		</div>
-	</footer>
-	<!-- End Main Footer -->
+</div>
+</div>
+</footer>
+<!-- End Main Footer -->
+
+
 	
 </div>
 <!-- End PageWrapper -->
@@ -314,6 +335,10 @@
 <script src="assets/js/ScrollToPlugin.min.js"></script>
 <script src="assets/js/ScrollSmoother.min.js"></script>
 <script src="assets/js/script.js"></script>
+<script>
+	const video = document.querySelector('video');
+	video.playbackRate = 0.7; 
+</script>
 <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
 <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
 

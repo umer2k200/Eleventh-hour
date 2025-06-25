@@ -217,8 +217,11 @@
 .main-header .main-menu .navigation > li > a{
 	position:relative;
 	display:block;
-	font-size:16px;
-	font-weight:500;
+
+	font-size:20px;
+	/* font-size:16px; */
+	
+	font-weight:bold;
 	line-height:20px;
 	padding:18px 0px;
 	text-align:center;
@@ -229,7 +232,10 @@
 	-ms-transition:all 500ms ease;
 	-o-transition:all 500ms ease;
 	text-transform: uppercase;
-	font-family: 'Clash Display';
+
+	/* font-family: 'Clash Display'; */
+	font-family: 'FormulaCondensed';
+	letter-spacing: 2.5px;
 }
 
 .main-header .main-menu .navigation > li:hover > a::before{
